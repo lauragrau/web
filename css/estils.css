@@ -1,0 +1,812 @@
+/* Estils globals */
+
+:root {
+    --black-color: rgb(0, 0, 0);
+    --white-color: rgb(255, 255, 255);
+    --green-color: rgb(64, 195, 130);
+    --beige-color: rgb(242, 242, 230);
+    --mod-beige-color: rgba(242, 242, 230, 0.7);
+ }
+
+
+ html{
+    font-size:10px;
+    font-family: 'Alegreya', serif;
+    color: var(--black-color);
+    background-color: var( --beige-color); 
+}
+
+body {
+    font-family: 'Alegreya', serif;
+    font-size: 16px;
+    line-height: 1.6;
+    margin:0;
+    background-color: var(--beige-color);
+}
+
+.container,#main-content{
+    width: 95%;
+    max-width: 850px;        
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container{
+    width:94%;
+    max-width:1200px;
+    margin:0 auto;
+}
+
+em {
+    font-style: italic;
+}
+
+h1 {
+    text-align: center;
+    color: var(--black-color);
+    line-height: 100px;
+    margin: 0;
+    
+}
+
+h1 + h2 {
+    text-align: center;
+    color: var(--black-color);
+}
+
+h2 {
+    color: var(--black-color);
+}
+
+.post-list h3{
+    font-size: 1.3rem;
+}
+
+section.blog-list li  {
+    background-color: var(--white-color); /* Establece el fondo blanco */
+}
+
+
+section.post-list li  {
+    background-color: var(--white-color); /* Establece el fondo blanco */
+}
+
+main {
+    padding: 20px;
+    
+}
+
+iframe {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    border: none;
+}
+
+/*enllaços*/
+a {
+    color: var(--black-color);
+    text-decoration: none;
+}
+
+.container-post a:hover {
+    text-decoration: none; /* Treu el subratllat en hover */
+    color: var(--green-color); 
+}
+
+/*a:hover {
+    text-decoration: underline;
+}*/
+
+/* Header */
+.header {
+    background-color: var(--white-color); /* Fons blanc */
+    width: 100%;
+}
+
+.header-container {
+    max-width: 1200px; /* Amplada màxima del contingut */
+    margin: 0 auto; /* Centrar contingut */
+    display: flex;
+    justify-content: space-between; /* Espai entre logo i menú */
+    align-items: center; /* Centrar elements verticalment */
+}
+
+/*.home h1 {
+    text-align: center;
+    color: var(--white-color);
+    line-height: 100px;
+    margin: 0;
+}*/
+
+figure img{
+    background-color: var(--white-color);
+    padding: 10px;
+}
+
+
+div.card > h3:hover {
+    color: var(--green-color);
+    text-decoration: none; 
+}
+
+h3 a:hover {
+    color: var(--green-color);
+    text-decoration: none; 
+}
+
+.card:hover{
+    text-decoration: none; 
+}
+
+.clo1 ul li:hover{
+    color: var(--green-color);
+    text-decoration: none; 
+
+}
+/*.details a {
+    color: #0066cc; /* Color de texto del enlace 
+    text-decoration: none; /* Elimina el subrayado 
+    font-weight: bold; /* Hace el texto en negrita (opcional) 
+    transition: color 0.3s ease; /* Transición suave al cambiar el color 
+    margin: 0;
+}
+
+.details a:hover {
+    color: #ff5733; /* Cambia el color cuando se pasa el ratón sobre el enlace 
+    text-decoration: underline; /* Añade subrayado al pasar el ratón 
+}*/
+
+
+/* Contenidor del logo */
+.logo {
+    background-image: url('../img/logotip.svg'); /* Ruta de la imatge */
+    background-repeat: no-repeat; /* Evitar que la imatge es repeteixi */
+    background-size: contain; /* Ajusta la mida de la imatge perquè encaixi */
+    background-position: center; /* Centra la imatge dins del contenidor */
+    width: 200px; /* Amplada del logo */
+    height: 60px; /* Alçada del logo */
+}
+
+.logo a {
+    display: block; /* Fa que l'enllaç ocupi tota l'àrea del logo */
+    width: 100%; /* Amplada del contenidor logo */
+    height: 100%; /* Alçada del contenidor logo */
+    text-indent: -9999px; /* Amaga el text si n'hi hagués */
+}
+
+/* Menú de navegació */
+.nav ul {
+    list-style: none; /* Elimina punts de la llista */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Elements en línia */
+    gap: 20px; /* Espai entre elements */
+}
+
+.nav a {
+    text-decoration: none; /* Elimina subratllat */
+    color: var(--black-color); /* Text negre */
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+header aside {
+    border-right: 2px solid var(--black-color);
+    padding-right: 10px;
+}
+
+footer aside {
+    border-right: 2px solid var(--white-color);
+    padding-right: 10px;
+}
+
+.highlight {
+    background-color: var(--green-color);
+    color: var(--white-color);
+    padding: 5px;
+}
+/*.nav a:hover {
+    text-decoration: underline; /* Subratllat al passar el cursor 
+}*/
+
+.blackboard{
+    background:var(--black-color) url(../img/hero-image-home.jpg);
+    background-size: cover; /* Assegura que la imatge cobreix tot */
+    background-position: center; /* Centra la imatge */
+    background-repeat: no-repeat; /* Evita repeticions de la imatge */
+    width: 100%; /* Amplada completa del viewport */
+    height: 70vh; /* Alçada fixa per fer-la proporcional */
+    display: flex; /* Activa el centrat horitzontal i vertical */
+    flex-direction: column; /* Organitza el text en columna */
+    align-items: center; /* Centra horitzontalment */
+    justify-content: center; /* Centra verticalment */
+    text-align: center; /* Centra el text */
+    color: var(--white-color); /* Text en blanc per a contrast */
+    
+    
+}
+
+.blackboard h1{
+    color: var(--white-color);
+}
+/*.home .blackboard{
+    padding-bottom:6rem;
+}*/
+
+/*Footer*/
+
+.footer {
+    background-color: var(--black-color); /* Fons negre */
+    color: var(--white-color); /* Text blanc */
+    padding: 20px 40px; /* Espais interns */
+    display: flex;
+    justify-content: center; /* Centra el contingut */
+    align-items: center;
+}
+
+.footer-container {
+    max-width: 1200px; /* Amplada màxima del footer */
+    width: 100%; /* Que s'adapti a la mida de la pàgina */
+    display: flex;
+    justify-content: space-between; /* Espai entre les dues columnes */
+    align-items: center;
+}
+
+/* Columna esquerra: Logo i copyright */
+.footer-left {
+    display: flex;
+    flex-direction: column; /* Columna de text i logo */
+    gap: 10px; /* Espai entre logo i text */
+}
+
+.footer-left .logo {
+    height: 40px; /* Alçada del logo */
+    object-fit: contain; /* Evita deformacions */
+}
+
+/* Columna dreta: Xarxes socials i enllaços legals */
+.footer-right {
+    text-align: right;
+}
+
+.footer-right .social {
+    display: flex;
+    gap: 10px; /* Espai entre icones */
+    margin-bottom: 10px;
+}
+
+.footer-right .icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.footer-right .icon.instagram {
+    background-image: url(../img/instagram.svg); /* Ruta de la icona d'Instagram */
+}
+
+.footer-right .icon.youtube {
+    background-image: url(../img/youtube.svg); /* Ruta de la icona de YouTube */
+}
+
+.footer-right .legal-links {
+    display: flex;
+    gap: 5px; /* Espai entre enllaços */
+    color: var(--white-color);
+}
+
+.footer-right .legal-links a {
+    color: var(--white-color);
+    text-decoration: none; /* Elimina subratllat */
+    font-size: 0.9rem; /* Mida del text */
+}
+
+.footer-right .legal-links a:hover {
+    color: var(--green-color); /* Canvia el color del text al passar el ratolí */
+}
+
+
+
+.advantages .container{
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap:3rem;
+}
+.advantages .left{
+    display:flex;
+    flex-flow:column wrap;
+    align-content:space-between;
+}
+
+.advantages h2{
+    font-weight: normal;
+    font-size:6rem;
+    color:var(--black-color);
+    line-height:1em;
+    margin-bottom:5rem;
+}
+
+.Field li{
+    display:flex;
+    flex-flow: column;
+    margin: 0;
+}
+
+
+
+
+
+
+/* Estilo general */
+.outFieldset {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.outFieldset li {
+    display:flex;
+    margin: 0;
+}
+
+.outFieldset p {
+    font-size: 1.2rem;
+    color: var(--black-color);
+    margin-bottom: 15px;
+}
+
+
+
+
+
+
+
+p{
+    font-size: 1.5rem;
+}
+
+p.lead {
+    font-size: 1.2rem;
+}
+
+figcaption{
+    font-size: 1.2rem;
+}
+
+
+
+
+/* Estilo para el asterisco obligatorio */
+label abbr {
+    color: #e74c3c;
+    font-size: 16px;
+}
+
+.text-overlay a{
+    color: var(--black-color);
+    text-decoration: underline dotted;
+}
+
+.text-overlay a:hover{
+    color: var(--black-color);
+    text-decoration: underline solid;
+}
+
+
+figcaption a, .monthly_topic a, label a{
+    color: var(--black-color);
+    text-decoration: underline dotted;
+}
+
+figcaption a:hover, .monthly_topic a:hover, label a:hover{
+    color: var(--black-color);
+    text-decoration: underline solid;
+}
+
+
+
+
+
+.pagination {
+    display: flex;
+    gap: 10px; /* Espai entre els elements */
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.pagination a, .pagination span {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px; /* Amplada dels botons */
+    height: 25px; /* Alçada dels botons */
+    text-decoration: none; /* Elimina el subratllat dels enllaços */
+    color: var(--black-color); /* Color del text */
+    font-weight: bold; /* Text en negreta */
+    border: 1px solid var(--black-color); /* Vora gris clara */
+    background-color: var(--white-color); /* Fons blanc */
+    
+}
+
+/*.pagination a:hover {
+    background-color: var(--white-color);  /* Canvia el fons al passar el ratolí 
+}*/
+
+.pagination a.active {
+    background-color: var(--green-color); /* Verd per al botó actiu */
+    color: var(--black-color); /* Text blanc */
+    border-color: var(--white-color); /* Vora del mateix color que el fons */
+    border: 1px solid var(--black-color); /* Vora gris clara */
+}
+
+.pagination a.active:hover {
+    background-color: var(--green-color);  /* Canvia el fons al passar el ratolí */
+    color: var(--black-color); /* Color del text */
+    border: 1px solid var(--black-color); /* Vora gris clara */
+}
+
+.pagination a:hover {
+    background-color: var(--green-color);  /* Canvia el fons al passar el ratolí */
+    color: var(--black-color); /* Color del text */
+    border: 1px solid var(--black-color); /* Vora gris clara */
+}
+
+.pagination span {
+    color: var(--black-color); /* Color del text dels punts suspensius */
+    border: none; /* Sense vora */
+    background-color: transparent; /* Fons transparent */
+    cursor: default; /* Sense efecte de clic */
+}
+
+
+
+
+nav {
+    width: 200px; /* Amplada del menú */
+    padding-left: 20px; /* Separació interna del menú */
+}
+
+nav ul {
+    list-style: none; /* Elimina els punts de la llista */
+    padding: 0; /* Elimina el padding per defecte */
+    margin: 0; /* Elimina el marge per defecte */
+}
+
+nav ul li {
+    margin-bottom: 5px; /* Espai entre els elements del menú */
+}
+
+nav ul li a {
+    text-decoration: none; /* Elimina el subratllat dels enllaços */
+    color: var(--black-color); /* Color dels enllaços */
+    display: block; /* Fa que l'enllaç ocupi tota l'amplada del menú */
+    font-weight: 700;
+
+}
+
+nav ul li a:hover { 
+    color: var(--green-color); /* Canvia el color del text al passar el ratolí */
+}
+
+
+
+
+
+
+
+
+/* Estilos responsivos */
+@media (max-width: 600px) {
+    .outFieldset {
+        padding: 15px;
+    }
+
+}
+
+@media screen and (min-width: 600px) {
+    .form {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 5%;
+    }
+}
+
+
+
+/* Responsivitat */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column; /* Disposa elements en columna */
+        text-align: center;
+    }
+
+    .nav ul {
+        gap: 10px; /* Redueix espai entre enllaços */
+    }
+
+    .footer-container {
+        flex-direction: column; /* Disposa elements en columna */
+        text-align: center;
+    }
+
+    footer .right{
+        order:0;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .advantages .left{
+        width:50%;
+        max-width:560px;
+    }
+    .advantages .right{
+        width:40%;
+    }
+    .advantages .congrats{
+        bottom:auto;
+        top:5rem;
+        left:-5rem;
+    }
+}
+
+
+
+#header ul,#header li,.blog-list ol,.post-list ol, .blog-list li, .post-list li,footer ul,footer li,.advantages ul,.advantages li{
+    margin:0;padding:0;
+    list-style-type: none;
+}
+
+
+.blog-list ol, .post-list ol{
+    display:grid;
+    grid-template-rows:repeat(8,1fr);
+    align-items: stretch;
+    gap:3rem;
+    margin-bottom:6rem;
+}
+
+
+/*.top-courses-list li a{
+    overflow:hidden;
+    border:1px solid var(--black-color);
+    
+    display:block;
+    position:relative;
+    height:100%;
+}
+.top-courses-list li a:hover{
+    border:1px solid var(--text-color);
+    box-shadow: var(--shadow);
+}
+
+.top-courses-list li a:hover img{
+    transition: transform 0.5s;
+    transform: scale(1.1);
+}
+
+
+.top-courses-list .img{
+    height:16rem;
+    overflow:hidden;
+}
+.top-courses-list img{
+    display:block;
+    object-fit: cover;
+}
+.top-courses-list li span{
+    position:absolute;
+    right:0.8rem;
+    top:0.8rem;
+    padding:0.5rem 1rem;
+    background:var(--yellow);
+    color:var(--main-color);
+   
+    font-size:1.4rem;
+}
+.top-courses-list li span.new{
+    left:0.8rem;
+    right:auto;
+    background:var(--main-color);
+    color:white;
+}
+.top-courses-list h3{
+    color:var(--dark-color);
+    line-height:1.1em;
+}
+
+.top-courses-list img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+.top-courses-list .card{
+    padding:2rem 1.7rem;
+}
+.top-courses-list h3{
+    margin:0 0 1rem 0;
+}
+.top-courses-list .details{
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    color:var(--text-color);
+    font-size:1.2rem;
+    gap:1rem;
+}
+
+*/
+.button {
+    border: 1px solid var(--black-color); /* Borde negro */
+    padding: 5px 10px; /* Espaciado interno */
+    text-decoration: none; /* Quita subrayado */
+    color: var(--black-color); /* Color del texto */
+    display: inline-block; /* Necesario para que el padding funcione correctamente */
+    background-color: var(--white-color); /* Fondo opcional */
+    margin-left: 0;
+}
+
+.button:hover {
+    border: 2px solid var(--green-color); /* Borde negro */
+    text-decoration: none; 
+}
+
+
+
+/* Contenedor para la imagen y el texto */
+.image-container {
+    position: relative; /* Necesario para posicionar el texto sobre la imagen */
+    display: inline-block; 
+
+}
+
+.image-container img {
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block; /* Elimina el espacio inferior que normalmente tiene una imagen */
+}
+
+
+.image-container-post img {
+    width: 100%;
+    height: 350px;
+}
+
+
+
+
+/* Estilo del texto que se coloca sobre la imagen */
+.text-overlay {
+    position: absolute; /* Flotant respecte a la secció */
+    bottom: 10px; /* A prop de la part inferior */
+    right: 10px; /* Al costat dret */
+    background: var(--white-color); /* Fons negre translúcid */
+    color: var(--black-color); /* Text blanc */
+    font-size: 0.8rem; /* Mida més petita */
+    padding: 5px 10px; /* Espai intern */
+    z-index: 2; /* Prioritza el crèdit sobre altres elements */
+}
+
+
+
+
+
+
+@media screen and (min-width: 576px){
+    .contact-options .container,#header .features{
+        flex-flow:row;
+    }
+    .blog-list ol, .top-categories ul{
+        grid-template-columns:1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+    .post-list ol{
+        grid-template-columns:1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+
+}
+@media screen and (min-width: 768px){
+    .instructor .container{
+        flex-flow:row;
+    }
+    .instructor .left,.instructor .right{
+        width:50%;
+    }
+    footer .right{
+        order:0;
+    }
+
+}
+@media screen and (min-width: 992px){
+    .blog-list ol{
+        grid-template-columns:1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .post-list ol{
+        grid-template-columns:1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .advantages .left{
+        width:50%;
+        max-width:560px;
+    }
+    .advantages .right{
+        width:40%;
+    }
+    .advantages .congrats{
+        bottom:auto;
+        top:5rem;
+        left:-5rem;
+    }
+    .article #main-content .container,.offices-contact{
+        flex-flow: row;
+    }
+}
+@media screen and (min-width: 1200px){
+    #hamburguer-toggle,.hamburger{
+        display: none;
+    }
+    #header nav ul{
+        flex-flow: row wrap;
+        justify-content: space-between;
+        width:100%;
+        max-width: 85rem;
+    }
+    #header nav .login{
+        border-bottom:0;
+    }
+    #header nav .login:hover{
+        color:var(--main-color);
+    }
+    #header nav .button{
+        border-radius:var(--border-radius-big);
+        background:white;
+        border:0;
+        padding:1.4rem 2rem;
+        color:var(--dark-color);
+    }
+    #header nav .button:hover{
+        border:0;
+        background:var(--main-color);
+        color:white;
+    }
+    #header nav ul a.current{
+        border-color:var(--yellow);
+    }
+    #header nav ul a:not(.current):hover{
+        border-color:white;
+    }
+}
+
+
+@media screen and (min-width: 600px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    column-gap: 5%;
+  }
+
+  
+}
+
+
+@media screen and (min-width: 600px) {
+    section.blog {
+      display: grid;
+      grid-template-columns: 1fr 1fr 2fr;
+      column-gap: 5%;
+    }
+
+    section.post {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        column-gap: 5%;
+      }
+  }
